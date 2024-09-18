@@ -1,0 +1,76 @@
+@import "normalize.css";
+
+:root {
+  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 15px;
+
+  /*color-scheme: light dark;*/
+  /*color: rgba(255, 255, 255, 0.87);*/
+  /*background-color: #242424;*/
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --svg_color: #f6910d;
+  --date_color: #952121;
+}
+
+#root {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+h1, h2, h3, h4, h5, a, p{
+  line-height: 1.1;
+}
+
+.container {
+  padding: 1rem calc(50% - 500px);
+}
+
+@media (max-width: 1025px){
+  .container {
+    padding: 1rem calc(50% - 450px);
+  }
+}
+
+
+
+
+

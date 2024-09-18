@@ -1,0 +1,44 @@
+.hourly__block {
+    /*display: flex;*/
+    width: 100%;
+    overflow: hidden;
+    background: #DDD;
+}
+
+.hourly__block_inner_block {
+    display: flex;
+    transition: all ease 0.4s;
+    /*overflow: hidden;*/
+}
+
+.hourly__block_nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.hourly__block_nav_block {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    min-width: 150px;
+    z-index: 1000;
+    opacity: 0.7;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all .5s;
+    padding: .4rem .8rem;
+    border: 1px solid #cacaca;
+}
+
+.arrow_btn {
+    background-color: #f3f3f3 !important;
+}
+
+.arrow_btn:hover path {
+    fill: #f6910d;
+}
+
+.arrow_btn path {
+    fill: #952121;
+}

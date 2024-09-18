@@ -1,0 +1,115 @@
+header {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    width: 40%;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.location_form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location_input {
+    padding: 0 1rem !important;
+}
+
+.location_input_clear {
+    opacity: .5;
+    transition: opacity ease-in-out 0.2s !important;
+}
+
+.location_input_clear:hover {
+    opacity: 1;
+}
+
+.location_input_clear svg path {
+    fill: #213451;
+}
+
+.location_input_clear svg {
+    height: 28px;
+    width: 28px;
+}
+
+.location_form_input {
+    margin-right: 1rem !important;
+    width: 50%;
+}
+
+.location_form_input label{
+    padding-top: .6rem;
+    color: #213451;
+}
+
+.location_btn {
+    justify-content: center;
+    width: 20% !important;
+    font-family: "Protest Riot", sans-serif !important;
+    font-size: 1.5rem !important;
+    height: 56px;
+}
+
+.radio_group_item span:last-child {
+    color: #656565;
+}
+
+
+@media (max-width: 1025px){
+    .location_form_input {
+        width: 70%;
+    }
+
+    .location_btn {
+        width: 25% !important;
+        font-size: 1rem !important;
+    }
+
+    .logo {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1023px){
+    .container_header {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 767px){
+    .container_header {
+        align-items: center;
+    }
+
+    .location_form {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .location_form_input {
+        width: 100%;
+        margin-bottom: 1rem !important;
+    }
+
+    .location_btn {
+        font-size: 1rem !important;
+        width: 100% !important;
+    }
+
+    .logo {
+        width: 70%;
+    }
+
+    .radio_group_item span:last-child {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,94 @@
+.main_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: .5rem;
+    min-width: 220px;
+}
+.card_content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 !important;
+    min-width: 200px;
+}
+
+.grid_container {
+    align-items: center;
+    padding: 1rem;
+}
+.card_infobox_container {
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+}
+
+.card_box_info {
+    display: flex;
+    flex-direction: column !important;
+    /*justify-content: center;*/
+    min-width: 220px;
+    padding: 0 !important;
+}
+
+.card_infobox_row {
+    display: flex;
+    align-items: center;
+    font-size: .9rem !important;
+}
+
+.card_infobox_svg path {
+    fill: var(--svg_color);
+}
+
+.card_infobox_row p {
+    margin-left: .4rem;
+    margin-right: .2rem;
+    color: #7c7c7c !important;
+}
+
+.card_infobox_row span {
+    font-weight: bold;
+    color: #3d639e;
+}
+
+.main_title {
+    text-align:center;
+    color: var(--date_color);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .3rem 0;
+}
+
+.sub_title {
+    padding: .2rem 0;
+    font-size: 1rem;
+    color: #3d639e;
+}
+
+.sub_title span {
+    font-weight: 700;
+}
+
+.card_box_image {
+    display: flex;
+    height: 70%;
+    font-family: "Protest Riot", sans-serif;
+}
+
+@media (max-width: 767px){
+
+    .card_content {
+        justify-content: center;
+    }
+
+    .card_infobox_row {
+        /*justify-content: center;*/
+    }
+
+    .grid_cell {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 0 !important;
+    }
+}

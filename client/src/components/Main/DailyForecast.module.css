@@ -1,0 +1,121 @@
+.card {
+    display: flex;
+    flex-flow: column;
+    max-width: 30%;
+    padding: 1rem;
+}
+.card_box_image {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    font-family: "Protest Riot", sans-serif;
+}
+
+.date_title {
+    margin-top: .2rem;
+    margin-bottom: .4rem;
+    text-align: center;
+    line-height: 1rem;
+    color: var(--date_color);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.main_title {
+    margin-top: .2rem;
+    margin-bottom: .4rem;
+    text-align: center;
+    line-height: 1rem;
+    color: var(--date_color);
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.sub_title {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: .8rem !important;
+    color: #3d639e;
+    font-weight: bold;
+}
+
+.sub_title p {
+    margin-right: .3rem;
+}
+
+.sub_title span {
+    font-weight: bold;
+    color: #952121;
+}
+
+.card_infobox_text {
+    display: flex;
+    align-items: center;
+}
+.card_infobox_text p {
+    margin-right: .2rem;
+}
+
+.card_infobox_row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.card_infobox_svg path {
+    fill: var(--svg_color);
+}
+
+.card_infobox_row p {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    color: #7c7c7c;
+}
+
+.card_infobox_row span {
+    font-weight: bold;
+    color: #3d639e;
+}
+
+@media (max-width: 767px){
+
+    .card_infobox_svg {
+        display: none !important;
+    }
+
+    .card_infobox_row {
+        font-size: .7rem !important;
+        flex-direction: column;
+    }
+
+    .sub_title, .card_infobox_text {
+        flex-direction: column;
+    }
+
+    .sub_title {
+        font-size: .8rem !important;
+    }
+
+    .main_title {
+        place-content: center;
+        font-size: .95rem;
+        min-height: 4rem;
+    }
+
+    .card_infobox_row span {
+        font-size: .6rem;
+    }
+
+    .sub_title span {
+        font-size: .6rem;
+    }
+
+    .sub_title p {
+        font-size: .7rem;
+    }
+}
